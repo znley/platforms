@@ -19,6 +19,11 @@ alias(
     actual = ":arm64",
 )
 
+alias(
+    name = "loong64",
+    actual = ":loongarch64",
+)
+
 # TODO(b/136237408): Remove this generic CPU name and replace with a specific one.
 constraint_value(
     name = "arm",
@@ -132,6 +137,6 @@ constraint_value(
 
 # LoongArch64
 constraint_value(
-	name = "loong64",
+	name = "loongarch64",
 	constraint_setting = ":cpu",
 )
